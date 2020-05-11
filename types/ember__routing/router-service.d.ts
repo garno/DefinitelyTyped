@@ -177,6 +177,9 @@ export default class RouterService extends Service {
      * @returns              the Transition object associated with this attempted transition
      */
     transitionTo(
+      options: { queryParams: object }
+    ): Transition;
+    transitionTo(
         routeNameOrUrl: string,
         options?: { queryParam: object }
     ): Transition;
